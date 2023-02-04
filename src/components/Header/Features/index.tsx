@@ -36,7 +36,7 @@ export function Features({}: FeaturesProps) {
         }}
       >
         <LinkIcon
-          title="Analytics"
+          title="Sistemas Web"
           icon={
             <path
               strokeLinecap="round"
@@ -47,11 +47,11 @@ export function Features({}: FeaturesProps) {
             />
           }
         >
-          Get a better understanding of where your traffic is coming from.
+          Criação de Sistemas web
         </LinkIcon>
 
         <LinkIcon
-          title="Engagement"
+          title="Gerenciamento de Midias Sociais"
           icon={
             <path
               strokeLinecap="round"
@@ -62,11 +62,11 @@ export function Features({}: FeaturesProps) {
             />
           }
         >
-          Speak directly to your customers in a more meaningful way.
+          Gerenciamento de Midias Sociais
         </LinkIcon>
 
         <LinkIcon
-          title="Security"
+          title="Landpages"
           icon={
             <path
               strokeLinecap="round"
@@ -77,11 +77,11 @@ export function Features({}: FeaturesProps) {
             />
           }
         >
-          Your customers&#039; data will be safe and secure.
+          Criação de landpages
         </LinkIcon>
 
         <LinkIcon
-          title="Integrations"
+          title="Blogs"
           icon={
             <path
               strokeLinecap="round"
@@ -92,11 +92,11 @@ export function Features({}: FeaturesProps) {
             />
           }
         >
-          Connect with third-party tools that you&#039;re already using.
+          Criação de Blogs
         </LinkIcon>
 
         <LinkIcon
-          title="Automations"
+          title="Desenvovimento de Apps"
           icon={
             <path
               strokeLinecap="round"
@@ -107,7 +107,7 @@ export function Features({}: FeaturesProps) {
             />
           }
         >
-          Build strategic funnels that will drive your customers to convert
+          Criação de Apps
         </LinkIcon>
       </SimpleGrid>
       <Box
@@ -169,7 +169,7 @@ export function Features({}: FeaturesProps) {
                   d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </chakra.svg>
-              <chakra.span ml={3}>Watch Demo</chakra.span>
+              <chakra.span ml={3}>Saiba Mais</chakra.span>
             </Link>
           </Box>
 
@@ -205,7 +205,7 @@ export function Features({}: FeaturesProps) {
                   d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                 />
               </chakra.svg>
-              <chakra.span ml={3}>Contact Sales</chakra.span>
+              <chakra.span ml={3}>Fale conosco</chakra.span>
             </Link>
           </Box>
         </Stack>

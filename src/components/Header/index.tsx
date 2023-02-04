@@ -20,6 +20,7 @@ import { FaMoon, FaSun } from 'react-icons/fa'
 import { IoIosArrowDown } from 'react-icons/io'
 import { AiOutlineMenu, AiFillHome, AiOutlineInbox } from 'react-icons/ai'
 import { BsFillCameraVideoFill } from 'react-icons/bs'
+
 export const Header = () => {
   const SwitchIcon = useColorModeValue(FaMoon, FaSun)
   const bg = useColorModeValue('white', 'gray.800')

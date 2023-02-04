@@ -6,7 +6,6 @@ import {
   CloseButton,
   VStack,
   chakra,
-  Flex,
   Box,
   IconButton,
   HStack,
@@ -69,94 +68,98 @@ export const Header = () => {
 
   return (
     <chakra.header
-      h="full"
-      bg={bg}
+      // h="full"
+
+      display="flex"
+      justifyContent="space-between"
       w="full"
+      maxW="7xl"
+      margin="0 auto"
       px={{
         base: 2,
         sm: 4,
       }}
       py={4}
     >
-      <Flex alignItems="center" justifyContent="space-between" mx="auto">
-        <Link display="flex" alignItems="center" href="/">
-          Rocke8er.digital
-        </Link>
-        <Box
-          display={{
-            base: 'none',
-            md: 'inline-flex',
-          }}
-        >
-          <HStack spacing={1}>
-            <Box role="group">
-              <Button
-                bg={bg}
-                color="gray.500"
-                alignItems="center"
-                fontSize="md"
-                _hover={{
-                  color: cl,
-                }}
-                _focus={{
-                  boxShadow: 'none',
-                }}
-                rightIcon={<IoIosArrowDown />}
-              >
-                Features
-              </Button>
-              <Box
-                pos="absolute"
-                left={0}
-                w="full"
-                display="none"
-                _groupHover={{
-                  display: 'block',
-                }}
-              >
-                <Features />
-              </Box>
+      <Link display="flex" alignItems="center" href="/">
+        Rocke8er.digital
+      </Link>
+      <Box
+        display={{
+          base: 'none',
+          md: 'flex',
+        }}
+      >
+        <HStack spacing={1}>
+          <Box role="group">
+            <Button
+              bg={bg}
+              color="gray.500"
+              alignItems="center"
+              fontSize="md"
+              _hover={{
+                color: cl,
+              }}
+              _focus={{
+                boxShadow: 'none',
+              }}
+              rightIcon={<IoIosArrowDown />}
+            >
+              Soluções
+            </Button>
+            <Box
+              pos="absolute"
+              left={0}
+              w="full"
+              display="none"
+              _groupHover={{
+                display: 'block',
+              }}
+            >
+              <Features />
             </Box>
-            <Button
-              bg={bg}
-              color="gray.500"
-              display="inline-flex"
-              alignItems="center"
-              fontSize="md"
-              _hover={{
-                color: cl,
-              }}
-              _focus={{
-                boxShadow: 'none',
-              }}
-            >
-              Blog
-            </Button>
-            <Button
-              bg={bg}
-              color="gray.500"
-              display="inline-flex"
-              alignItems="center"
-              fontSize="md"
-              _hover={{
-                color: cl,
-              }}
-              _focus={{
-                boxShadow: 'none',
-              }}
-            >
-              Pricing
-            </Button>
-          </HStack>
-        </Box>
+          </Box>
+          <Button
+            bg={bg}
+            color="gray.500"
+            display="inline-flex"
+            alignItems="center"
+            fontSize="md"
+            _hover={{
+              color: cl,
+            }}
+            _focus={{
+              boxShadow: 'none',
+            }}
+          >
+            Blog
+          </Button>
+          <Button
+            bg={bg}
+            color="gray.500"
+            display="inline-flex"
+            alignItems="center"
+            fontSize="md"
+            _hover={{
+              color: cl,
+            }}
+            _focus={{
+              boxShadow: 'none',
+            }}
+          >
+            Pricing
+          </Button>
+        </HStack>
+      </Box>
+      <Box>
         <Spacer />
         <Box display="flex" alignItems="center">
           <HStack spacing={1}>
             <Button colorScheme="brand" variant="ghost" size="sm">
-              Sign in
+              Fale Conosco
             </Button>
             <Button colorScheme="brand" variant="solid" size="sm">
-              Sign up
+              Entrar
             </Button>
           </HStack>
           <IconButton
@@ -188,7 +191,7 @@ export const Header = () => {
             onClick={mobileNav.onOpen}
           />
         </Box>
-      </Flex>
+      </Box>
 
       {MobileNavContent}
     </chakra.header>

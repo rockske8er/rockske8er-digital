@@ -5,6 +5,7 @@ import {
   SimpleGrid,
   Stack,
   useColorModeValue,
+  VStack,
 } from '@chakra-ui/react'
 import { LinkIcon } from '../../Link/LinkIcon'
 
@@ -17,12 +18,14 @@ export function Features({}: FeaturesProps) {
   const tcl = useColorModeValue('gray.900', 'gray.50')
 
   return (
-    <>
+    <VStack alignItems="center" w={'full'}>
       <SimpleGrid
+        maxW="6xl"
+        margin="0 auto"
         columns={{
           base: 1,
           md: 3,
-          lg: 5,
+          lg: 3,
         }}
         pos="relative"
         gap={{
@@ -111,6 +114,7 @@ export function Features({}: FeaturesProps) {
         </LinkIcon>
       </SimpleGrid>
       <Box
+        w={'full'}
         px={{
           base: 5,
           sm: 8,
@@ -120,6 +124,8 @@ export function Features({}: FeaturesProps) {
         display={{
           sm: 'flex',
         }}
+        justifyContent="center"
+        alignItems="center"
       >
         <Stack
           direction={{
@@ -210,6 +216,6 @@ export function Features({}: FeaturesProps) {
           </Box>
         </Stack>
       </Box>
-    </>
+    </VStack>
   )
 }

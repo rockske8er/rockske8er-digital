@@ -18,7 +18,7 @@ export function Features({}: FeaturesProps) {
   const tcl = useColorModeValue('gray.900', 'gray.50')
 
   return (
-    <VStack alignItems="center" w={'full'}>
+    <VStack alignItems="center" w={'full'} bgColor={'gray.600'}>
       <SimpleGrid
         maxW="6xl"
         margin="0 auto"

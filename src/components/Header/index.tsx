@@ -68,12 +68,13 @@ export const Header = () => {
 
   return (
     <chakra.header
-      // h="full"
-
+      h="full"
+      position={'relative'}
       display="flex"
       justifyContent="space-between"
       w="full"
       maxW="7xl"
+      zIndex={'base'}
       margin="0 auto"
       px={{
         base: 2,
